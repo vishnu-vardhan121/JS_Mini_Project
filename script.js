@@ -1,8 +1,8 @@
-function sendMessage(messageBoxId) {
+function sendMessage(messageBoxId,event) {
     var messageInput = document.querySelector(`#${messageBoxId} + .input-section .message-input`);
     var messageBox = document.getElementById(messageBoxId);
 
-    if (messageInput.value.trim() !== "") {
+    if (messageInput.value.trim() !== "" ) {
         var sent = document.createElement("div");
         sent.setAttribute("class", "incoming-message");
         sent.innerText = messageInput.value;
